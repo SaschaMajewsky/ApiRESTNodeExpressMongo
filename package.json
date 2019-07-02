@@ -4,7 +4,7 @@
   "description": "A RESTful API made with Node.js, Express and MongoDB.",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
