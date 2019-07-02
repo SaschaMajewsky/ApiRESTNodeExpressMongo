@@ -1,0 +1,60 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/5d1b47ec54388631f055b063
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "sascha123"
+}
+
+###
+
+DELETE http://localhost:3000/users/5d1b47ec54388631f055b063
+
+###
+
+PATCH http://localhost:3000/users/5d1b47ec54388631f055b063
+Content-Type: application/json
+
+{
+    "name": "Sascha New"
+}
+
+### 
+GET http://localhost:3000/todos
+
+###
+
+GET http://localhost:3000/todos/5d1b537ab8e64c1904472c1c
+
+
+###
+
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "user": "sascha123",
+    "text": "Learn Mongo",
+    "status": false
+}
+
+###
+
+DELETE http://localhost:3000/todos/5d1b537ab8e64c1904472c1c
+
+###
+
+PATCH http://localhost:3000/todos/5d1b539ab8e64c1904472c1d
+Content-Type: application/json
+
+{
+    "user": "sascha67"
+}
