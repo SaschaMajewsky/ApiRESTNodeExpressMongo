@@ -13,9 +13,9 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
-//Getting One User
 
-//:id stands for paramer and can by accessed by req.params
+//Getting One User
+//:id stands for parameter and can by accessed by req.params
 router.get('/:id', getUsers, (req, res) => {
   res.json(res.user);
 });
@@ -24,7 +24,6 @@ router.get('/:id', getUsers, (req, res) => {
 router.post('/', async (req, res) => {
   const user = new User({
     name: req.body.name,
-    todos: req.body.todos,
   });
 
   try {
@@ -68,7 +67,6 @@ async function getUsers(req, res, next) {
   let user;
   try {
     user = await User.findById(req.params.id);
-    console.log('GRABBED USER: ', user);
     if (user == null) {
       return res.status(404).json({ message: 'Cannot find User' });
     }

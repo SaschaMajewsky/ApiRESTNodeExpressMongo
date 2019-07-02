@@ -2,7 +2,7 @@ GET http://localhost:3000/users
 
 ###
 
-GET http://localhost:3000/users/5d1b39473f25393dec2c9f46
+GET http://localhost:3000/users/5d1b47ec54388631f055b063
 
 
 ###
@@ -11,21 +11,29 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "sascha1"
+    "name": "sascha123"
 }
 
 ###
 
-DELETE http://localhost:3000/users/5d1b39473f25393dec2c9f46
+DELETE http://localhost:3000/users/5d1b47ec54388631f055b063
 
 ###
 
-PATCH http://localhost:3000/users/5d1b3deffa49401954be0541
+PATCH http://localhost:3000/users/5d1b47ec54388631f055b063
 Content-Type: application/json
 
 {
     "name": "Sascha New"
 }
+
+### 
+GET http://localhost:3000/todos
+
+###
+
+GET http://localhost:3000/todos/5d1b537ab8e64c1904472c1c
+
 
 ###
 
@@ -33,6 +41,20 @@ POST http://localhost:3000/todos
 Content-Type: application/json
 
 {
-    "todos": [{"user": "sascha", "title": "Learn Node", "category": "learn", "status": false, "text": "A test."},
-    {"user": "sascha", "title": "Learn MongoDB", "category": "learn", "status": true, "text": "More tests."}]
+    "user": "sascha123",
+    "text": "Learn Mongo",
+    "status": false
+}
+
+###
+
+DELETE http://localhost:3000/todos/5d1b537ab8e64c1904472c1c
+
+###
+
+PATCH http://localhost:3000/todos/5d1b539ab8e64c1904472c1d
+Content-Type: application/json
+
+{
+    "user": "sascha67"
 }
