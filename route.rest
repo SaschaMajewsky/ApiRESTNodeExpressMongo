@@ -24,7 +24,7 @@ PATCH https://apirestnodeexpressmongo.herokuapp.com/users/5d1b47ec54388631f055b0
 Content-Type: application/json
 
 {
-    "name": "Sascha New"
+    "name": "updatedExampleName"
 }
 
 ### 
@@ -41,8 +41,8 @@ POST https://apirestnodeexpressmongo.herokuapp.com/todos
 Content-Type: application/json
 
 {
-    "user": "sascha12",
-    "text": "Learn ggg",
+    "user": "sascha",
+    "text": "Learn MongoDB",
     "status": false
 }
 
@@ -56,7 +56,7 @@ PATCH https://apirestnodeexpressmongo.herokuapp.com/todos/5d1b539ab8e64c1904472c
 Content-Type: application/json
 
 {
-    "user": "sascha67"
+    "user": "changedExampleUserOfTodoTask"
 }
 
 ###
