@@ -1,26 +1,26 @@
-GET http://localhost:3000/users
+GET https://apirestnodeexpressmongo.herokuapp.com/users
 
 ###
 
-GET http://localhost:3000/users/5d1b47ec54388631f055b063
+GET https://apirestnodeexpressmongo.herokuapp.com/users/5d1b47ec54388631f055b063
 
 
 ###
 
-POST http://localhost:3000/users
+POST https://apirestnodeexpressmongo.herokuapp.com/users
 Content-Type: application/json
 
 {
-    "name": "sascha123"
+    "name": "jeff"
 }
 
 ###
 
-DELETE http://localhost:3000/users/5d1b47ec54388631f055b063
+DELETE https://apirestnodeexpressmongo.herokuapp.com/users/5d1b47ec54388631f055b063
 
 ###
 
-PATCH http://localhost:3000/users/5d1b47ec54388631f055b063
+PATCH https://apirestnodeexpressmongo.herokuapp.com/users/5d1b47ec54388631f055b063
 Content-Type: application/json
 
 {
@@ -28,33 +28,37 @@ Content-Type: application/json
 }
 
 ### 
-GET http://localhost:3000/todos
+GET https://apirestnodeexpressmongo.herokuapp.com/todos
 
 ###
 
-GET http://localhost:3000/todos/5d1b537ab8e64c1904472c1c
+GET https://apirestnodeexpressmongo.herokuapp.com/todos/5d1b537ab8e64c1904472c1c
 
 
 ###
 
-POST http://localhost:3000/todos
+POST https://apirestnodeexpressmongo.herokuapp.com/todos
 Content-Type: application/json
 
 {
-    "user": "sascha123",
-    "text": "Learn Mongo",
+    "user": "sascha12",
+    "text": "Learn ggg",
     "status": false
 }
 
 ###
 
-DELETE http://localhost:3000/todos/5d1b537ab8e64c1904472c1c
+DELETE https://apirestnodeexpressmongo.herokuapp.com/todos/5d1b537ab8e64c1904472c1c
 
 ###
 
-PATCH http://localhost:3000/todos/5d1b539ab8e64c1904472c1d
+PATCH https://apirestnodeexpressmongo.herokuapp.com/todos/5d1b539ab8e64c1904472c1d
 Content-Type: application/json
 
 {
     "user": "sascha67"
 }
+
+###
+
+GET https://apirestnodeexpressmongo.herokuapp.com/users
