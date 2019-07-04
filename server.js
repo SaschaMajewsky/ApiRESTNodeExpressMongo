@@ -1,4 +1,4 @@
-require('dotenv').config();
+/* require('dotenv').config(); */
 
 const express = require('express');
 const app = express();
@@ -10,7 +10,7 @@ const cors = require('cors');
 app.use(cors());
 
 // connects with database
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 const db = mongoose.connection;
 
 //console logs outputs on error or established connection
