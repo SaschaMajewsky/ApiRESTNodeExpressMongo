@@ -39,4 +39,4 @@ app.get('*', (req, res) => {
 });
 
 //starts server
-app.listen(3000, () => console.log('Server has started'));
+app.listen(process.env.PORT || 3000, () => console.log('Server has started'));
