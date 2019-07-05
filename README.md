@@ -1,7 +1,9 @@
 # ApiRESTNodeExpressMongo
 
-[Visit Frontend](http://www.todo.saschamajewsky.de)
+[Visit Frontend](http://www.todo.saschamajewsky.de)<br />
 [Visit Backend](https://apirestnodeexpressmongo.herokuapp.com/)
+<br />
+![](workflow.gif)
 
 A RESTful API powered by Node.js, Express.js and MongoDB to be used as the backend for my project [Redux Todo App.](https://github.com/SaschaMajewsky/Redux-Todo)
 
